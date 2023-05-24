@@ -1,0 +1,59 @@
+php artisan make:controller PostController
+php artisan migrate
+php artisan migrate:rollback //Borrar el ultimo migrate
+php artisan migrate:fresh  //Borrar todo y complicar denuevo, pero no te guarda datos
+php artisan make:migration create_posts_table //crear tabla de "posts"
+php artisan migrate //actualizar despues de todo 
+php artisan make:migration add_body_to_posts_table //agregar una columna a la BD
+- laravel.com/docs/migrations#available-column-types //Tipos de variables en laravel
+*modifico primero la bd recien creada y luego para modificar poner:
+php artisan migrate
+php artisan make:model Post -m //crea model Post y tambien la migracion
+-----TINKER
+php artisan tinker
+use\App\Models\Post
+Post::get()
+-Insertando datos
+$post = new Post;
+$post -> title = 'Segundo titulo'
+$post->body ='Contenido'
+$post->save() //Guardar y actualizar
+$post->delete();
+Post::find($id);
+Post::get();
+
+-------------
+php artisan route:list //Rutas definidas en la aplicacion
+github.com/Laravel-Lang/lang
+wa.me/51966518833
+
+node -v
+npm -y
+npm install
+npm run dev // para levantar el servidor de VIT
+npm run build // para publicar los cambios
+npm install sass --save-dev  // para instalar SASS en el dev
+npm install bootstrap --save-dev // para instalar bootstrap 
+
+npm uninstall bootstrap 
+tailwindcss.com
+
+npm install -D tailwindcss postcss autoprefixer// instalar dependencias de Tailwindcss
+npx tailwindcss init -p // instalar los archivos de configuracion 
+
+
+npm i @tailwindcss/forms --save-dev
+
+
+C:\laragon\www\laravel9\vendor\laravel\framework\src\Illuminate\Translation\lang
+
+
+vendor\laravel\framework\src\Illuminate\Translation\lang
+
+
+
+
+
+
+
+
